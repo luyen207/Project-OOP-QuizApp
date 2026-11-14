@@ -5,7 +5,6 @@
 #include <unordered_set>
 #include <cctype>
 using namespace std;
-
 TextQuestionRepository::TextQuestionRepository(const string& path)
     : filePath(path) {}
 
@@ -17,7 +16,6 @@ bool TextQuestionRepository::loadQuestions() {
         cerr << "Khong the mo file du lieu: " << filePath << "\n";
         return false;
     }
-
     unordered_set<int> existingIds;
     string line;
     int lineNumber = 0;
